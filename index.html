@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Balvigyan Sample</title>
+    <script>
+        function checkPassword() {
+            var password = prompt('Enter the password:'); // You can replace this with a more secure input method
+
+            // Check if the entered password is '1234'
+            if (password === '1234') {
+                // Password is correct, perform the desired action
+                alert('Login successful!');
+                // For example, you can redirect to the dashboard after a successful login
+                window.location.href = 'background website.html';
+            } else {
+                // Password is incorrect, show an error message
+                alert('Incorrect password. Please try again.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Balvigyan Sample</h1>
+        <button onclick="checkPassword()">Login</button>
+    </div>
+</body>
+</html>
+
